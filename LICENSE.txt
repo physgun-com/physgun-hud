@@ -1,0 +1,17 @@
+Physgun LLC Server-Exclusive License (PSE-L)
+
+Version 1.0, October 17, 2023
+
+Copyright [Your Name or Entity Name] [Year of Copyright, e.g. 2023]. All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use the Software solely on servers hosted by Physgun LLC.
+
+No other use, modification, merging, publication, distribution, sublicensing, sale, or any other form of transfer of the Software is permitted.
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Violation of the terms of this license will subject the violator to legal action. If you wish to use the Software in any way not explicitly allowed by this license, you must obtain a separate license agreement from the original copyright holder.
+
+END OF TERMS AND CONDITIONS
