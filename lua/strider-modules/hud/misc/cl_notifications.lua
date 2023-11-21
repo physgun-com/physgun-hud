@@ -188,7 +188,7 @@ do
 
         if not strider.HUD.Notifications[id] then return end
         strider.HUD.Notifications[id]:Remove()
-        strider.HUD.Notifications = nil
+        strider.HUD.Notifications[id] = nil
     end
 
     function strider.HUD.UpdateNotifs()
@@ -210,17 +210,17 @@ hook.Add("PostGamemodeLoaded", "strider:HUD:ReplaceDarkRPVotes", function()
         return strider.HUD.AddNotification(...)
     end
 
-    -- notification.Kill = function(...)
-    --     if not strider.HUD.Config.modules.Notifications then return notification.STRIDEROLD__Kill(...) end
+    notification.Kill = function(...)
+        if not strider.HUD.Config.modules.Notifications then return notification.STRIDEROLD__Kill(...) end
 
-    --     return strider.HUD.KillNotification(...)
-    -- end
+        return strider.HUD.KillNotification(...)
+    end
 
-    -- notification.AddProgress = function(id, text, frac)
-    --     if not strider.HUD.Config.modules.Notifications then return notification.STRIDEROLD__AddProgress(id, text, frac) end
-    --     local p = strider.HUD.AddNotification(text, NOTIFY_HINT, 0, true)
-    --     strider.HUD.SpecialNotifications[id] = p
-    -- end
+    notification.AddProgress = function(id, text, frac)
+        if not strider.HUD.Config.modules.Notifications then return notification.STRIDEROLD__AddProgress(id, text, frac) end
+        local p = strider.HUD.AddNotification(text, NOTIFY_HINT, 0, true)
+        strider.HUD.SpecialNotifications[id] = p
+    end
 
     if not strider.HUD.Config.modules.NotificationVotes then return end
 
