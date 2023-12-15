@@ -18,8 +18,12 @@ end
 
 function PANEL:Paint(w, h)
     local lp = LocalPlayer()
+    if not IsValid(lp) then return end
 
-    local new_money = Lerp(FrameTime() * 10, self.money, lp:getDarkRPVar("money"))
+    local nm = lp:getDarkRPVar("money")
+    if not nm  or not self.money then return end
+    
+    local new_money = Lerp(FrameTime() * 10, self.money, nm)
     if self.money != new_money then
         self.money = new_money
         if math.abs(self.money - new_money) > 1 then
