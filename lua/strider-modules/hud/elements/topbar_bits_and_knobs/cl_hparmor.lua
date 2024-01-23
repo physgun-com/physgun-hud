@@ -62,7 +62,7 @@ function PANEL:Paint(w, h)
     })
 
     hw = hw + draw.Text({
-        text = math.ceil(hp) / lp:GetMaxArmor() * 100 .. "%",
+        text = hp,
         pos = {aw, h / 2},
         xalign = 0,
         yalign = 4,
@@ -71,7 +71,7 @@ function PANEL:Paint(w, h)
     })
 
     aw = aw + draw.Text({
-        text = math.ceil(armor) / lp:GetMaxHealth() * 100 .. "%",
+        text = armor,
         pos = {aw, h / 2},
         xalign = 0,
         yalign = 3,
