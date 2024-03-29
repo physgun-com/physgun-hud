@@ -62,7 +62,7 @@ function PANEL:Paint(w, h)
     })
 
     hw = hw + draw.Text({
-        text = hp,
+        text = math.Round(hp),
         pos = {aw, h / 2},
         xalign = 0,
         yalign = 4,
@@ -71,7 +71,7 @@ function PANEL:Paint(w, h)
     })
 
     aw = aw + draw.Text({
-        text = armor,
+        text = math.Round(armor),
         pos = {aw, h / 2},
         xalign = 0,
         yalign = 3,
